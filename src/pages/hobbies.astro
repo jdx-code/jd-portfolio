@@ -1,17 +1,16 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro";
+
 const pageTitle = 'My Hobbies';
 const hobbies = [
     'Coding',
     'Reading books',
+    'Playing Guitar',
     'Listening to music',
 ]
 ---
-<body>
-    <a href="/">Home</a>
-	<a href="/about">About</a>
-	<a href="/hobbies">Hobbies</a>
-    <h1>{pageTitle}</h1>
+<MainLayout title="My Hobbies">
     <ul>
-        {hobbies.map(hobby=><li>{hobby}</li>)}
-    </ul>    
-</body>
+        {hobbies.map(hobby => <li>{hobby}</li>)}
+    </ul>
+</MainLayout>

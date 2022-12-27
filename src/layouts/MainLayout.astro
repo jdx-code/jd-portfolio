@@ -1,0 +1,29 @@
+---
+const {title} = Astro.props;
+import "../styles/global.css";
+import Footer from "./Footer.astro";
+import Navbar from "./Navbar.astro";
+import Projects from "./Projects.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<Navbar></Navbar>		
+		<div class="font-playfair">
+			<div class="text-center mt-32">
+				<p class="">Hello, I'm</p>					
+				<p class="text-5xl py-4">Jyotirmoy Das</p>
+				<slot />
+			</div>			
+		</div>
+		<Projects></Projects>
+		<Footer></Footer>
+	</body>
+</html>

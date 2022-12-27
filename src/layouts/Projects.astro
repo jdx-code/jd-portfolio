@@ -1,0 +1,15 @@
+---
+import Cards from "./Cards.astro";
+
+const myProjects = [
+    'project1',
+    'project2',
+    'project3',
+]
+---
+<div>    
+    <p class="mx-4 mt-12 mb-6 text-2xl">My Projects</p>
+   
+    {myProjects.map(myProject => <Cards topic={myProject}/>)}
+
+</div>
