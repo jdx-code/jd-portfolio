@@ -12,6 +12,6 @@ const myProjects = [
 <div>    
     <p class="mx-4 mt-12 mb-6 text-2xl">My Projects</p>
     <div class="grid sm:grid-cols-6">
-            {myProjects.map(myProject => <Cards topic={myProject}/>)}
+            {myProjects.map((myProject, index) => <Cards topic={myProject} projectNumber={index+1}/>)}
     </div>
 </div>
