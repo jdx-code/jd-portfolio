@@ -1,20 +1,12 @@
-<div class="mx-4 flex flex-col sm:flex-row">
+<div class="mx-4 flex flex-col sm:flex-row sm:justify-between">
     <div>
         <h1 class="mt-12 mb-6 text-2xl">Write to me</h1>
         <p class="">Mail : jyotirmoydas12@gmail.com</p>
     </div>    
-    <form>
-        <div>
-            <label>Your Name</label>
-            <input type="text" value=""/>
-        </div>
-        <div>
-            <label>Your Email</label>
-            <input type="text" value=""/>
-        </div>
-        <div>
-            <label>Your Message</label>
-            <textarea rows="10" cols="20"></textarea>    
-        </div>        
+    <form class="w-full">       
+        <input class="w-full my-1 p-3 border-2 border-purple-300" type="text" value="" placeholder="Your name"/>
+        <input class="w-full my-1 p-3 border-2 border-purple-300" type="email" value="" placeholder="Your email"/>
+        <textarea class="w-full my-1 p-3 border-2 border-purple-300" rows="10" cols="20" placeholder="Your message"></textarea>            
+        <button class="w-full my-1 p-2 bg-black text-white text-lg border-2 border-purple-300">Submit</button>
     </form>    
 </div>
