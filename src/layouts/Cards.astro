@@ -3,9 +3,8 @@ const {topic} = Astro.props;
 ---
 
 <div class="m-3 sm:col-span-2">   
-    <div class="w-full h-44 border-2 border-purple-300 rounded-lg">
-        <!-- <p>{topic}</p> -->
-        <a href={topic[1]}><img class="w-full h-full" src={topic[0]}/></a>
+    <div class="w-full max-w-[85%] mx-auto h-44 border-2 border-purple-300 rounded-lg">        
+        <a href={topic[0]}><img class="w-full h-full" src={topic[1]}/></a>
     </div>
 </div>
 
