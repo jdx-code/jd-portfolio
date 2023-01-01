@@ -4,7 +4,8 @@ module.exports = {
 	theme: {		
 		extend: {
 			fontFamily: {
-    			playfair: "'Playfair Display', serif",
+    			playfair: "'Playfair Display', serif",				
+				gantari: "'Gantari', sans-serif",
 			},
 		},
 	},
