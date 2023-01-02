@@ -6,6 +6,7 @@ module.exports = {
 			fontFamily: {
     			playfair: "'Playfair Display', serif",				
 				gantari: "'Gantari', sans-serif",
+				manrope: "'Manrope', sans-serif",
 			},
 		},
 	},
