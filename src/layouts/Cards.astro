@@ -7,9 +7,9 @@ const {topic} = Astro.props;
         <a href={topic[0]}><img class="w-full h-full rounded-md object-cover ease-in-out duration-500 group-hover:scale-125" src={topic[1]}/></a>
         <div class="absolute bg-black w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-75"></div>
         <div class="flex flex-col pt-24 absolute opacity-0 fd-sh group-hover:opacity-100">
-            <span class="pb-2 text-sm font-bold text-white tracking-wider leading-relaxed">{topic[2]}</span> 
+            <span class="pb-2 text-xs font-bold text-white tracking-wider leading-relaxed">{topic[2]}</span> 
             <div>
-                <a class="text-center rounded-sm p-1 bg-white text-gray-700 font-bold text-sm" href={topic[0]} target="_blank">Visit site</a>
+                <a class="text-center rounded-sm p-1 bg-white text-gray-700 font-bold text-xs" href={topic[0]} target="_blank">View site</a>
             </div>
         </div>
     </div>
