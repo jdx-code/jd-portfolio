@@ -2,11 +2,12 @@
 const {title} = Astro.props;
 import "../styles/global.css";
 import Footer from "./Footer.astro";
-import Navbar from "./Navbar.astro";
 import Projects from "./Projects.astro";
 import AboutSection from "./AboutSection.astro";
 import ContactSection from "./ContactSection.astro";
 import Skillset from "./Skillset.astro";
+import Navbar from "./Navbar.astro";
+
 ---
 
 <html lang="en">
@@ -17,8 +18,8 @@ import Skillset from "./Skillset.astro";
 		<meta name="generator" content={Astro.generator} />			
 		<title>{title}</title>
 	</head>
-	<body>
-		<Navbar></Navbar>		
+	<body>		
+		<Navbar />
 		<div class="font-playfair">
 			<div class="text-center mt-32">
 				<p class="text-2xl">Hello I'm</p>					
