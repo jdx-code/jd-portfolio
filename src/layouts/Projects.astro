@@ -1,32 +1,34 @@
 ---
 import Cards from "./Cards.astro";
 import ZEPHYR from '/img/zephyr.png'
-import NESTRING from '/img/nest-ring.png'
 import CAREASE from '/img/carease.png'
 import EVENTBYTES from '/img/eventbytes.png'
+import NESTRING from '/img/nestring.png'
 import DLSDS from '/img/dlsds.png'
 import DREAMSENDEAVOUR from '/img/dreamsendeavour.png'
 import JYOTISH from '/img/jyotish108.png'
 import KASIYOLI from '/img/kasiyoli.png'
 import TAIPHAKE from '/img/taiphake.png'
 
-
 const myProjects = [
-    ['https://www.zephyrsolutionsgroup.com/', ZEPHYR, 'Start-up website'],    
-    ['https://carease-25.vercel.app/', CAREASE, 'CarEase website'],
-    ['https://eventbytes.vercel.app//', EVENTBYTES, 'EventBytes website'],    
-    ['https://nest-ring-app.vercel.app/home', NESTRING, 'Food Delivery website'],
-    ['https://taiphakeassam.com/', TAIPHAKE,'Website of TaiPhake community'],    
-    ['http://www.dreamsendeavour.com/', DREAMSENDEAVOUR, 'Educational website'],        
-    ['https://jyotish108.com/', JYOTISH, 'Vedic Astrology website'],   
-    ['http://kasiyoli.com/', KASIYOLI, 'e-Magazine (Assamese language)'],   
-    ['https://dlsdsassam.in', DLSDS, 'DLSDS Non Profit'],        
+    ['https://www.zephyrsolutionsgroup.com/', 'https://github.com/jdx-code', ZEPHYR, 'Agency website'],  
+    ['https://taiphakeassam.com/', 'https://github.com/jdx-code', TAIPHAKE,'Website of TaiPhake community'],    
+    ['http://www.dreamsendeavour.com/', 'https://github.com/jdx-code', DREAMSENDEAVOUR, 'Educational website'],        
+    ['https://jyotish108.com/', 'https://github.com/jdx-code', JYOTISH, 'Vedic Astrology website'],   
+    ['http://kasiyoli.com/', 'https://github.com/jdx-code', KASIYOLI, 'e-Magazine (Assamese language)'],   
+    ['https://dlsdsassam.in', 'https://github.com/jdx-code', DLSDS, 'DLSDS Non Profit'],        
+]
+
+const teamProjects = [
+    ['https://carease.vercel.app/', 'https://github.com/chingu-voyages/v47-tier3-team-25', CAREASE, 'Chingu Voyage-47 project'],
+    ['https://eventbytes.vercel.app//', 'https://github.com/chingu-voyages/v48-tier3-team-20', EVENTBYTES, 'Chingu Voyage-48 project'],    
+    ['https://nest-ring-app.vercel.app/home', 'https://github.com/chingu-voyages/v49-tier3-team-27', NESTRING, 'Chingu Voyage-49 project'],         
 ]
 ---
 <div class="px-2 sm:px-24 md:px-16">        
     <h1 class="mx-4 mt-20 mb-6 text-3xl sm:text-4xl">Solo Projects</h1>
     <div class="grid sm:grid-cols-6">
-            {myProjects.map(myProject => <Cards topic={myProject}/>)}
+            {myProjects.map(myProject => <Cards topic={myProject} />)}
     </div>
     <div class="flex justify-center items-center my-8">
         <a href="https://github.com/jdx-code" target="_blank" class="w-full max-w-[55%] sm:max-w-[35%] md:max-w-[25%] lg:max-w-[20%] p-4 text-center border-2 border-black hover:bg-[#000003] hover:text-white">
@@ -34,9 +36,9 @@ const myProjects = [
         </a>
     </div>
 
-    <h1 class="mx-4 mt-20 mb-6 text-3xl sm:text-4xl">Remote Team Projects</h1>
+    <h1 class="mx-4 mt-20 mb-6 text-3xl sm:text-4xl">Team Projects (Remote)</h1>
     <div class="grid sm:grid-cols-6">
-            {myProjects.map(myProject => <Cards topic={myProject}/>)}
+            {teamProjects.map(teamProject => <Cards topic={teamProject} />)}
     </div>
     <div class="flex justify-center items-center my-8">
         <a href="https://github.com/jdx-code" target="_blank" class="w-full max-w-[55%] sm:max-w-[35%] md:max-w-[25%] lg:max-w-[20%] p-4 text-center border-2 border-black hover:bg-[#000003] hover:text-white">
