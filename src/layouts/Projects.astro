@@ -1,6 +1,7 @@
 ---
 import Cards from "./Cards.astro";
 import ZEPHYR from '/img/zephyr.png'
+import NESTRING from '/img/nest-ring.png'
 import CAREASE from '/img/carease.png'
 import EVENTBYTES from '/img/eventbytes.png'
 import DLSDS from '/img/dlsds.png'
@@ -12,8 +13,9 @@ import TAIPHAKE from '/img/taiphake.png'
 
 const myProjects = [
     ['https://www.zephyrsolutionsgroup.com/', ZEPHYR, 'Start-up website'],    
+    ['https://carease-25.vercel.app/', CAREASE, 'CarEase website'],
     ['https://eventbytes.vercel.app//', EVENTBYTES, 'EventBytes website'],    
-    ['https://carease-25.vercel.app/', CAREASE, 'CarEase website'],    
+    ['https://nest-ring-app.vercel.app/home', NESTRING, 'Food Delivery website'],
     ['https://taiphakeassam.com/', TAIPHAKE,'Website of TaiPhake community'],    
     ['http://www.dreamsendeavour.com/', DREAMSENDEAVOUR, 'Educational website'],        
     ['https://jyotish108.com/', JYOTISH, 'Vedic Astrology website'],   
@@ -21,8 +23,18 @@ const myProjects = [
     ['https://dlsdsassam.in', DLSDS, 'DLSDS Non Profit'],        
 ]
 ---
-<div class="px-2 sm:px-24 md:px-16">    
-    <h1 class="mx-4 mt-20 mb-6 text-3xl sm:text-4xl">My Projects</h1>
+<div class="px-2 sm:px-24 md:px-16">        
+    <h1 class="mx-4 mt-20 mb-6 text-3xl sm:text-4xl">Solo Projects</h1>
+    <div class="grid sm:grid-cols-6">
+            {myProjects.map(myProject => <Cards topic={myProject}/>)}
+    </div>
+    <div class="flex justify-center items-center my-8">
+        <a href="https://github.com/jdx-code" target="_blank" class="w-full max-w-[55%] sm:max-w-[35%] md:max-w-[25%] lg:max-w-[20%] p-4 text-center border-2 border-black hover:bg-[#000003] hover:text-white">
+            View More
+        </a>
+    </div>
+
+    <h1 class="mx-4 mt-20 mb-6 text-3xl sm:text-4xl">Remote Team Projects</h1>
     <div class="grid sm:grid-cols-6">
             {myProjects.map(myProject => <Cards topic={myProject}/>)}
     </div>
